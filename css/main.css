@@ -1,0 +1,516 @@
+* {
+    box-sizing: border-box;
+    outline:none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Raleway,sans-serif;
+    color: #ffffff;
+}
+main, div {
+    margin: 0;
+    min-width: 320px;
+}
+section {
+    height: 100%;
+    width: 30%;
+}
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    max-width: 2500px;
+}
+.main-carousel {
+    width: 70%; 
+    height: 100%;
+    background: linear-gradient(289deg,#4fc5fe,#4048f0 72%,#3d35ee);
+}
+.carousel-cell {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flickity-page-dots {
+    bottom: 3px;
+}
+.flickity-page-dots .dot {
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+    margin-left: 10px;
+    background: transparent;
+    border: 2px solid white;
+}
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+.form-container {
+    font-family: Raleway,sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('https://contentstudio.io/assets/img/head_background.8fa71e8b.png');
+    background-position: -150px -100px; 
+    background-repeat: no-repeat;
+}
+form {
+    padding: 10px auto;
+    text-align: center;
+}
+.ad-header {
+    color: #3d39ee;
+    font-size: 3.6em;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0;
+}
+.big-text {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.ad-subheader {
+    margin-top: 0;
+    color: #4fb6e9;
+    font-size: 2.75em;
+    font-weight: 500;
+}
+input {
+    width: 80%;
+    color: #000000;
+    display: block;
+    margin: 15px auto;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+}
+::placeholder {
+    color: #a9aaac;
+    border: none;
+}
+input:focus {
+    border-bottom: 2px solid #869df0;
+    transition: border-bottom 0.3s ease-in-out;
+} 
+.btn {
+    width: 80%;
+    background: linear-gradient(252deg,#2dd87e,#14c4a4);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,.15);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+    opacity: 1;
+    padding: 12px 30px;
+}
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.logo-container {
+    position: fixed;
+    left: 29%;
+    z-index: 10;
+}
+.logo {
+    width: 215px;
+}
+.image-container {
+    margin-right: 7%;
+}
+.first-image {
+    width: 550px;
+}
+.second-image {
+    display: none;
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.5%;
+}
+.tools {
+    position: relative;
+}
+.tools .content-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+.tool-unit {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    /* max-width: 33%; */
+    height: 100%;
+}
+.tool-unit .tool-image {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 114px;
+} 
+.top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+}
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.header {
+    font-size: 34px;
+    max-width: 95%;
+    margin-bottom: 0;
+}
+.sub-header {
+    font-weight: 100;
+    font-size: 18px;
+    max-width: 90%;
+}
+.bottom-content .tools-header {
+    font-size: 1.35em;
+    margin-top: 20px;
+}
+.bottom-content .tools-subheader {
+    font-size: 1.2em;
+    font-weight: 100;
+    max-width: 250px;
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+.reviews .bottom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 99%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reviews .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.reviews .header {
+    font-size: 2.7em;
+    margin-right: auto;
+    margin-left: auto;
+}
+.reviews .subheader {
+    font-size: 1.5em;
+}
+.reviews .header span.blue {
+    font-size: 1.3em;
+    color: #4fc5fe;
+}
+.review-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+.bold {
+    font-weight: bold;
+}
+.quote {
+    padding-left: 5%;
+    text-align: center;
+    font-style: italic;
+    width: 95%;
+}
+.review-wrapper figure {
+    margin-top: 40px;
+}
+.review-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+@media screen and (max-width: 1350px) {
+    .main {
+        width: 100%;
+    }
+    .main-carousel {
+        width: 80%;
+    }
+    .form-container {
+        width: 20%;
+    }
+    .logo-container {
+        left: 18%;
+    }
+    .logo {
+        width: 175px;
+    }
+    .first-image {
+        width: 350px;
+    }
+    .ad-header {
+        color: #3d39ee;
+        font-size: 2.1em;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+    .big-text {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .ad-subheader {
+        margin-top: 0;
+        color: #4fb6e9;
+        font-size: 1.5em;
+        font-weight: 500;
+    }  
+    .btn {
+        font-size: 0.9em;
+    } 
+    .tools .content-container {
+        align-content: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .bottom-content {
+        max-width: 1180px;
+        align-content: center;
+        justify-content: center;
+    } 
+    .bottom-content .tool-unit {
+        min-width: 270px;
+    }
+    .bottom-content .tools-header {
+        font-size: 1.05em;
+        margin-top: 20px;
+    }
+    .bottom-content .tools-subheader {
+        font-size: 0.9em;
+        font-weight: 100;
+        max-width: 180px;
+    }
+    .bottom-content .tool-image {
+        width: 97px;
+    }
+    .reviews .header {
+        font-size: 2em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .reviews .subheader {
+        font-size: 1.1em;
+    }  
+    .review-wrapper {
+        min-width: 200px;
+    }  
+    .quote {
+        padding-left: 2%;
+        text-align: center;
+        font-style: italic; 
+    }  
+    .info {
+        min-width: 0;
+    }
+}
+@media screen and (max-width: 1000px){
+
+    .logo-container {
+        left: 18%;
+    }
+    .logo {
+        width: 145px;
+    }
+    .first-image {
+        display: none;
+    }
+    .second-image {
+        display: inline-block;
+        width: 150px;
+    }
+    .ad-header {
+        color: #3d39ee;
+        font-size: 1.4em;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+    .big-text {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .ad-subheader {
+        margin-top: 0;
+        color: #4fb6e9;
+        font-size: 1em;
+        font-weight: 500;
+    }  
+    .btn {
+        font-size: 0.9em;
+    } 
+    .main-slide {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content-container{
+        text-align: center;
+    }
+    .bottom-content {
+        max-width: 1000px;
+    } 
+    .bottom-content .tool-unit {
+        min-width: 120px;
+    }
+    .reviews .header {
+        display: none;
+    }
+    .reviews .subheader {
+        font-size: 1em;
+    }  
+    .quote {
+        padding-left: 2%;
+        text-align: center;
+        font-style: italic; 
+        margin-bottom: 0;
+    }  
+    .info {
+        min-width: 0;
+    }
+    .review-image {
+        margin-top: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    .info {
+        min-width: 0;
+        font-size: 0.8em;
+
+    }
+}
+@media screen and (max-width: 767px){
+  
+    .main {
+        flex-direction: column-reverse;
+        max-width: 800px;
+        height: auto;
+    }
+    .form-container {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+    }
+    .main-carousel {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+    }
+    .main-slide {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .logo-container {
+        position: absolute;
+        margin-left: 15px;
+        left: 0;
+        top: 0;
+    }
+    .ad-header {
+        font-size: 2.0em;
+    }
+    .ad-subheader {
+        font-size: 1.8em;
+    }  
+    .content-container {
+        height: 100%;
+        margin-top: 3%;
+        max-height: 230px;
+        padding: 10px;
+    }
+    .image-container {
+        margin-top: 0;
+    }
+    .main-slide .header {
+        margin-top: 0;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-slide .sub-header {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flickity-page-dots li.dot {
+        width: 15px;
+        height: 15px;
+        margin-bottom: 20px;
+    }
+    .tools .top-content {
+        display: none;
+    }
+    .tools .bottom-content {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .tools .tool-unit {
+        flex-direction: row;
+        width: 100%;
+        min-width: 0;
+        margin: 20px 30px 20px 0;
+
+    }
+    .tool-unit .tools-header {
+        display: inline-block;
+        font-size: 1.2em;
+        margin-top: 0px;
+        flex-grow: 1;
+    }
+    .tool-unit .tools-subheader {
+        display: inline-block;
+        font-size: 1.0em;
+    }
+    .bottom-content .tool-unit .tool-image {
+        width: 71px;
+    } 
+    .reviews.content-container {
+        margin-top: 15%;
+        max-height: none;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .reviews .top-content .header {
+        font-size: 1.4em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .reviews .second-review {
+        display: none;
+    }
+    .quote {
+        font-size: 16px;
+    }
+}
